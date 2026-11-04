@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="FX Link" commit="1e77e6ca90c153d99f2e6b8e221483bc4d553b6a">
+  <category name="FX">
+    <reapack name="FX Link.lua" type="script" desc="FX Link: copy settings between plugin instances, or keep them in sync">
+      <metadata>
+        <link rel="website" href="https://github.com/migstopheles/reaper-fx-link">Repository</link>
+        <description>{\rtf1\ansi\deff0{\fonttbl{\f0\fswiss Helvetica;}}\f0\fs20
+{\b\fs28 FX Link}\par\par
+Link instances of the same plugin, e.g. on double-tracked parts panned hard left/right. With Sync on, changing any linked instance changes all of them. Or copy settings one-off.\par\par
+\bullet  Works with VST, VST3, CLAP, JSFX and AU plugins\par
+\bullet  Two-way sync of parameters, including automation and presets\par
+\bullet  Optional sync of internal state, for plugins whose knobs are not parameters\par
+\bullet  Per-group parameter exclusions (e.g. keep each side's pan)\par
+\bullet  Groups are saved in the project\par
+Requires REAPER 7 and the ReaImGui extension (0.10 or newer, available via ReaPack). Sync runs while the FX Link window is open.\par\par
+}</description>
+      </metadata>
+      <version name="0.1.0" author="migstopheles" time="2026-11-04T22:50:04Z">
+        <changelog>Initial release</changelog>
+        <source main="main" hash="1220c53bfd7b586503c53371ad9dd6cb811a369e2d6a915d8ea550fb63e2f87124f3">https://github.com/migstopheles/reaper-fx-link/raw/1e77e6ca90c153d99f2e6b8e221483bc4d553b6a/FX%20Link.lua</source>
+        <source file="FX Link - Diagnostics.lua" main="main" hash="1220e70604524ee745a0f1ed652d3205829afd5486031215128592b28de537a5708a">https://github.com/migstopheles/reaper-fx-link/raw/1e77e6ca90c153d99f2e6b8e221483bc4d553b6a/FX%20Link%20-%20Diagnostics.lua</source>
+        <source file="fxlink/engine.lua" hash="12200689679f43cd93d9f37d1ad32cbd626b11d64845d9a70e623245bf1beec55f72">https://github.com/migstopheles/reaper-fx-link/raw/1e77e6ca90c153d99f2e6b8e221483bc4d553b6a/fxlink/engine.lua</source>
+        <source file="fxlink/model.lua" hash="12201ee92a045bf23b1f5f54f15201a63328dddde42ea3a07787d7afe2ca0ec6049e">https://github.com/migstopheles/reaper-fx-link/raw/1e77e6ca90c153d99f2e6b8e221483bc4d553b6a/fxlink/model.lua</source>
+        <source file="fxlink/ui.lua" hash="1220ebbc665eb6deba5fd5b0498ebeab499acafed4d5f6aafa76770c4a21597cbe4b">https://github.com/migstopheles/reaper-fx-link/raw/1e77e6ca90c153d99f2e6b8e221483bc4d553b6a/fxlink/ui.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <metadata>
+    <link rel="website">https://github.com/migstopheles/reaper-fx-link</link>
+  </metadata>
+</index>
