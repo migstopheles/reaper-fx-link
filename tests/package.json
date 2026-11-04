@@ -1,0 +1,9 @@
+{
+  "name": "fx-link-tests",
+  "private": true,
+  "type": "module",
+  "description": "Runs the FX Link Lua tests on Lua 5.4 (via wasmoon) without installing Lua",
+  "dependencies": {
+    "wasmoon": "^1.16.0"
+  }
+}

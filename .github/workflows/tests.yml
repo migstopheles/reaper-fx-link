@@ -1,0 +1,21 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: tests/package-lock.json
+      - run: npm ci --prefix tests
+      - run: scripts/test.sh
+      - name: Check index.xml is well-formed
+        run: |
+          if [ -f index.xml ]; then python3 -c "import xml.etree.ElementTree as ET; ET.parse('index.xml')"; fi
